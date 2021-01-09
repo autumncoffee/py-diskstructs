@@ -185,7 +185,7 @@ ac_diskstructs = Extension(
 
 setup(
     name='ac_diskstructs',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
     ext_modules=[
         ac_diskstructs,
