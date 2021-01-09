@@ -79,7 +79,7 @@ namespace NACPyDiskStructs {
         }
 
         ((TPersistentImmutableHashMap*)ptr)->Insert(
-            key,
+            (uint64_t)key,
             TBlob(valueLength, value)
         );
 
@@ -141,7 +141,7 @@ namespace NACPyDiskStructs {
             return nullptr;
         }
 
-        return HashMapGetImpl(ptr, key);
+        return HashMapGetImpl(ptr, (uint64_t)key);
     }
 
     PyObject* HashMapGetAll(PyObject*, PyObject* args) {
