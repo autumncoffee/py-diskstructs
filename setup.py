@@ -11,8 +11,8 @@ import tarfile
 from ssl import create_default_context
 
 
-AC_COMMON = ('ac-common', 'cxx-common', 'v1.0.1')
-AC_LIBRARY = ('ac-library', 'cxx-library', 'v1.0.4')
+AC_COMMON = ('ac-common', 'cxx-common', 'v1.0.3')
+AC_LIBRARY = ('ac-library', 'cxx-library', 'v1.0.6')
 
 
 class BuildExtCommand(build_ext):
@@ -185,7 +185,7 @@ ac_diskstructs = Extension(
 
 setup(
     name='ac_diskstructs',
-    version='1.0.1',
+    version='1.0.2',
     packages=find_packages(),
     ext_modules=[
         ac_diskstructs,
